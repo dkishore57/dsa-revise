@@ -1,7 +1,7 @@
 def subsequence(ind,ds,ans,arr):
     if ind>=n:
         ans.append(ds[:])
-        return ans
+        return
     ds.append(arr[ind])
     subsequence(ind+1,ds,ans,arr)
     ds.pop()
