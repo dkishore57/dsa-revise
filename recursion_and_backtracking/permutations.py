@@ -10,9 +10,9 @@ def permutations(ind,nums,ds,ans,freq):
             ds.pop()
             freq[i] = False
 def permute(nums):
-    ans = []
-    ds = []
-    freq = [False] * len(nums)
+    ans=[]
+    ds=[]
+    freq=[False]*len(nums)
     permutations(0,nums,ds,ans,freq)
     return ans
 print(permute([1, 2, 3]))
